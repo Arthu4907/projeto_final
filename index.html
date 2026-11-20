@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header>
+            <h1>Lista de Tarefas</h1>
+            <p>Organize suas tarefas de forma simples e eficiente!</p>
+        </header>
+
+        <section class="formulario">
+            <input 
+                type="text" 
+                id="inputTarefa" 
+                placeholder="Digite uma nova tarefa..."
+            >
+
+            <button id="btnAdicionar">Adicionar</button>
+        </section>
+
+        <nav class="filtros">
+            <button class="filtro ativo" data-filtro="todas">Todas</button>
+            <button class="filtro" data-filtro="pendentes">Pendentes</button>
+            <button class="filtro" data-filtro="concluidas">Concluídas</button>
+        </nav>
+
+        <ul id="listaTarefas"></ul>
+
+        <footer>
+            <p id="contador">Total: 0 | Concluídas: 0</p>
+            <button id="btnLimpar">Limpar todas</button>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

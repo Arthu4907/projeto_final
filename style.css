@@ -1,0 +1,173 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111827;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background: #1f2937;
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #60a5fa;
+}
+
+header p {
+    color: #d1d5db;
+}
+
+.formulario {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+button {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#btnAdicionar {
+    background: #2563eb;
+    color: white;
+}
+
+#btnAdicionar:hover {
+    background: #1d4ed8;
+}
+
+.filtros {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filtro {
+    background: #374151;
+    color: white;
+}
+
+.filtro.ativo {
+    background: #2563eb;
+}
+
+#listaTarefas {
+    list-style: none;
+}
+
+.tarefa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #374151;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.tarefa span {
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+.tarefa.concluida span {
+    text-decoration: line-through;
+    color: #9ca3af;
+}
+
+.acoes {
+    display: flex;
+    gap: 5px;
+}
+
+.btnConcluir {
+    background: #16a34a;
+    color: white;
+}
+
+.btnExcluir {
+    background: #dc2626;
+    color: white;
+}
+
+.btnEditar {
+    background: #d97706;
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #4b5563;
+    gap: 10px;
+}
+
+#contador {
+    font-size: 14px;
+    color: #d1d5db;
+}
+
+#btnLimpar {
+    background: #dc2626;
+    color: white;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    .formulario {
+        flex-direction: column;
+    }
+
+    .filtros {
+        flex-wrap: wrap;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
